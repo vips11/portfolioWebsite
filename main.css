@@ -1,0 +1,72 @@
+ul {
+    font-family: Helvetica;
+    font-size: medium;
+}
+
+.thoughts {
+    color: aqua;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align:center;
+}
+
+li {
+    text-align: left;
+}
+
+line {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.skillsContainer {
+    background-color: #282c34;
+    width: 100vw;
+    height: 30vh;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 0.4em;
+    margin: 0.4em;
+    background-color: black;
+}
+
+#introduction {
+    background-color: #f4c2c2;
+    width: device-width;
+    height: 100vh;
+}
+
+img {
+    max-width: 20%;
+    max-height: 20%;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 32px;
+}
+
+#journey {
+    background-color: rgb(215, 75, 75);
+    height: 15em;
+}
+
+.links {
+    display: flex;
+}
+
+.introduction-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
