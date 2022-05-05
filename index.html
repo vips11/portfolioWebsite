@@ -2,62 +2,165 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script>
-  let screenWidth = screen.width;
-  var intro = document.getElementsByTagName('div');
- // console.log(width);
-  console.log(intro.innerHTML);
-  intro.style.setProperty('--screenWidth');
-</script>
 <div>
+  <div class="navigation-bar">
+    <a href="#introduction">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
   <div id="introduction" class="intro">
-    <div class="links">
-      <a href="https://www.linkedin.com/in/vipasha-gupta110502/"><img src="./vip.png" /></a>
-      <a href="https://github.com/vips11"><img src="./github.webp" /></a>
-    </div>
     <div class="introduction-body">
-      <p style="margin: 32px">
-        will new changes be deployed
-        Hi! My name is vipasha and i stady at uw cs. working at Alida.
-        want to schieve something big.
-        tectsyvcbso b pdn od ne
-        eorntbeorvbmneromvreovmrververververvnjecnodnmc
-      </p>
-      <img src="/Users/vipasha/Downloads/IMG_9767.JPG" style="margin-right: 10vw;" />
+      <div class="body-with-header">
+        <h1 style="text-align:center">Welcome to my world!</h1>
+        <div class="intro-text">
+          <p> Hi! My name is Vipasha and I'm a Computer Science student at the University of Waterloo.
+            I love travelling, painting and baking.
+            I'm currently looking for Fall 2022, Summer 2023 internships.
+            Feel free to look around the website and don't hesitate to reach out to me! </p>
+          <a href="./resume april '22.doc" class="resume">Resume</a>
+        </div>
+      </div>
+      <img src="./images/profile.png" class="profile" />
     </div>
-    <!-- <svg>
-<line x1="0" x2="410" y1="0" y2="0"/>
-</svg> -->
+
   </div>
-  <div class="skillsContainer">
-    <h3>Skills</h3>
+  <div id="skills">
+    <div>
+      <h1 style="color:var(--electric-blue);">SKILLS</h1>
+    </div>
+    <p>Languages</p>
+    <div class="skill-item">
+      <p class="box" style="color:rgb(67, 0, 252);">HTML</p>
+      <p class="box" style="color:rgb(252, 0, 160)">CSS</p>
+      <p class="box" style="color:rgb(0, 255, 136);">Javascript</p>
+      <p class="box" style="color:rgb(252, 80, 0);">C/C++</p>
+      <p class="box" style="color:rgb(0, 193, 252);">C#</p>
+      <p class="box" style="color:rgb(223, 252, 0);">Go</p>
+    </div>
     <p>Technologies</p>
-    <div class="skills">
-      <p class="box" style="color:rgb(252, 0, 160)">React</p>
-      <p class="box" style="color:rgb(67, 0, 252);">React Native</p>
-      <p class="box" style="color:rgb(67, 0, 252);">Java</p>
+    <div class="skill-item">
+      <p class="box" style="color:rgb(147, 0, 252)">React</p>
+      <p class="box" style="color:rgb(252, 0, 113);">React Native</p>
+      <p class="box" style="color:rgb(0, 227, 252);">React Native Testing Library</p>
+      <p class="box" style="color:rgb(46, 252, 0);">Unity</p>
+    </div>
+    <p>Dev Tools</p>
+    <div class="skill-item">
+      <p class="box" style="color:rgb(252, 176, 0)">Git</p>
+      <p class="box" style="color:rgb(252, 92, 0);">Postman</p>
+      <p class="box" style="color:rgb(252, 0, 210);">VS Code</p>
     </div>
   </div>
-  <div id="journey">
-  <h2>MY JOURNEY</h2>
-  <h3>Alida</h3>
-  <ul>
-    <li>Developed with JavaScript and TypeScript with the React Native framework.</li>
-    <li>Implemented a feature allowing users to receive push notifications at custom selected timings.
-    <li>Added filter and sort functionality to search results.</li>
-    <li>Increased maintainability, reliability, and depth of tests by upgrading the existing test suite using the React
-      Native Testing library.</li>
-    <li>Plotted Timeline, Donut and Multi-series area charts utilizing FusionCharts and parsing through data received
-      from APIs.</li>
-  </ul>
+</div>
+<div id="experience">
+  <h1>EXPERIENCES</h1>
+  <div class="experience-item">
+    <div class="logo">
+      <img src="./images/alida.png" style="margin-top: 20px;"/>
+      <h3>Alida</h3>
+    </div>
+    <div class="experience-content">
+      <div class="experience-title">
+        <p>Sep 2021 - August 2022</p>
+        <p>Software Developer</p>
+      </div>
+      <div class="experience-text">
+        <li>Developed with JavaScript and TypeScript with the React Native framework.</li>
+        <li>Implemented a feature allowing users to receive push notifications at custom selected timings.
+        <li>Added filter and sort functionality to search results.</li>
+        <li>Increased maintainability, reliability, and depth of tests by upgrading the existing test suite using the
+          React Native Testing library.</li>
+        <li>Plotted Timeline, Donut and Multi-series area charts utilizing FusionCharts and parsing through data
+          received
+          from APIs.</li>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="experience-item">
+    <div class="logo">
+      <a href="http://inclusifyapp.herokuapp.com/"><img src="./images/inclusify.png" style="margin-top: 20px;" /></a>
+      <h3>Inclusify</h3>
+    </div>
+    <div class="experience-content">
+      <div class="experience-title">
+        <p>Feb 2021</p>
+        <p>Frontend Developer</p>
+      </div>
+      <div class="experience-text">
+        <li> Winner at PearlHacks for the development of Inclusify</li>
+        <li>Worked with three colleagues, created a web application that replaces non-inclusive words such as blacklist
+          with inclusive words such as blocklist.</li>
+        <li>Constructed the application using React and included an API that searches for non-inclusive words.</li>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="experience-item">
+    <div class="logo">
+      <img src="./images/dsc.png" style="margin-top: 20px;"/>
+      <h3>UW Data Science Club</h3>
+    </div>
+    <div class="experience-content">
+      <div class="experience-title">
+        <p>Sep 2021 - Dec 2021</p>
+        <p>VP of External Affairs</p>
+      </div>
+      <div class="experience-text">
+        <li>Delegated tasks to the External Affairs team to connect with experienced personnel in data science.</li>
+        <li>Undertook the task to connect with professional data scientists and professors of data science to
+          successfully
+          host panels and events to educate and engage interested students.</li>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="experience-item">
+    <div class="logo">
+      <img src="./images/vivum.png" style="margin-top: 20px;"/>
+      <h3>VIVUM</h3>
+    </div>
+    <div class="experience-content">
+      <div class="experience-title">
+        <p>August 2019</p>
+        <p>Head of Finance and Merchandise Department</p>
+      </div>
+      <div class="experience-text">
+        <li>Supervised the financing and accounting for the biggest charity event in Bangalore, India.</li>
+        <li>Raised $14,226 from sales of merchandise designed for the event.</li>
+        <li>Coordinated with numerous manufacturers, determining the cost-effective products to maximize profits.</li>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="experience-item">
+    <div class="logo">
+      <img src="./images/aggregator.jpeg" style="margin-top: 20px;"/>
+      <h3>News Aggregator</h3>
+    </div>
+    <div class="experience-content">
+      <div class="experience-title">
+        <p>July 2018</p>
+        <p>Software Developer</p>
+      </div>
+      <div class="experience-text">
+        <li>Engaged with a mentor at Curiosity Gym to learn Python and Django.</li>
+        <li>Used Python to create the backend of a website that collates various news articles from different RSS feeds.
+        </li>
+        <li>Identified and solved the problem of receiving fake news from news sites.</li>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="contact" class="skillsContainer">
-  <h2>CONTACT</h2>
-  <p>Don't hesitate to reach me through the links below:)</p>
-  <a href="mailto:vipasha.gupta@uwaterloo.ca">
-    <img src="./app-tips-gmail.jpeg" style="margin-right: 10vw;" />
-  </a>
+<div id="contact">
+  <p class="contact">Don't hesitate to reach out to me through the links below :)</p>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/vipasha-gupta110502/"><img src="./images/linkedIn.png" class="icon" /></a>
+    <a href="https://github.com/vips11"><img src="./images/github.webp" class="icon" /></a>
+    <a href="mailto:vipasha.gupta@uwaterloo.ca"><img src="./images/gmail.jpeg" class="icon" /></a>
+  </div>
 </div>
 </div>
 <link rel="stylesheet" href="main.css">
