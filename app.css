@@ -1,3 +1,20 @@
+@media only screen and (max-width: 768px) {
+    .intro-text {
+        width: 200px;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .experience-text {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
 :root {
     --electric-blue: #97F9F9;
     --uranian-blue: #a4def9;
@@ -10,6 +27,19 @@
     color: var(--electric-blue);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+    .intro-text {
+        width: 500px;
+    }
+
+    .experience-text {
+        display: flex;
+        flex-wrap: wrap;
+        width: 750px;
+        font-size: medium;
+    }
 }
 
 ul {
@@ -37,7 +67,8 @@ li {
     text-align: left;
 }
 
-a, a:visited {
+a,
+a:visited {
     text-decoration: none;
     color: var(--black);
 
@@ -45,7 +76,7 @@ a, a:visited {
 }
 
 a:focus {
-   text-decoration: underline;
+    text-decoration: underline;
 }
 
 .navigation-bar {
@@ -73,20 +104,19 @@ a:focus {
     flex-direction: column;
 }
 
-.intro-text {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    color: var(--black);
-    /* border-style: solid;
-    border-width: 1px; */   
-}
-
 .profile {
     max-width: 25%;
     max-height: 25%;
     display: flex;
     align-self: center;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    /* border-style: solid;
+    border-width: 1px; */
 }
 
 .resume {
@@ -99,7 +129,7 @@ a:focus {
 
 #skills {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
     padding-top: 20px;
@@ -123,31 +153,28 @@ a:focus {
     padding-bottom: 10px;
 }
 
+.experience-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: var(--black);
+}
+
 .experience-title {
     line-height: 0.5;
     color: var(--black);
     font-weight: bold;
     align-self: center;
     text-align: center;
- }
+}
 
 .experience-item {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
     color: var(--black);
-}
-
-.experience-content {
-    display: flex;
-    flex-direction: column;
-}
-.experience-text {
-    display: flex; 
-    flex-wrap: wrap; 
-    width: 750px;
-    font-size: medium;
 }
 
 .logo {
@@ -161,11 +188,13 @@ a:focus {
     padding-bottom: 50px;
     padding-top: 30px;
 }
+
 .icon {
     margin-left: 20px;
     max-width: 80px;
     max-height: 80px;
 }
+
 .links {
     display: flex;
     flex-direction: row;
