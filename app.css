@@ -4,14 +4,19 @@
     }
 
     .logo {
+        flex-direction: column;
         align-self: center;
     }
 
     .experience-text {
-        width: 400px;
+        width: 200px;
         display: flex;
         flex-direction: column;
         align-self: center;
+    }
+
+    .experience-item {
+        flex-direction: column;
     }
 }
 
@@ -35,10 +40,11 @@
     }
 
     .experience-text {
-        display: flex;
-        flex-wrap: wrap;
         width: 750px;
-        font-size: medium;
+    }
+
+    .experience-title {
+       line-height: 0.5;
     }
 }
 
@@ -67,11 +73,9 @@ li {
     text-align: left;
 }
 
-a,
-a:visited {
+a, a:visited {
     text-decoration: none;
     color: var(--black);
-
     font-size: larger;
 }
 
@@ -165,8 +169,13 @@ a:focus {
     color: var(--black);
 }
 
+.experience-text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: medium;
+}
+
 .experience-title {
-    line-height: 0.5;
     color: var(--black);
     font-weight: bold;
     align-self: center;
