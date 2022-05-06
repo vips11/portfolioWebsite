@@ -1,211 +1,226 @@
 @media only screen and (max-width: 768px) {
-    .intro-text {
-        width: 200px;
-    }
+  .intro-text {
+    width: 200px;
+  }
 
-    .logo {
-        flex-direction: column;
-        align-self: center;
-    }
+  .logo {
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 10px;
+  }
 
-    .experience-text {
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
+  .experience-text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
 
-    .experience-item {
-        flex-direction: column;
-    }
-}
+  .experience-item {
+    flex-direction: column;
+  }
 
-:root {
-    --electric-blue: #97F9F9;
-    --uranian-blue: #a4def9;
-    --columbia-blue: #c1e0f7;
-    --thistle: #cfbae1;
-    --lilac: #c59fc9;
-    --pale-pink: #fad4d8;
-    --black: #242528;
-    --light-black: rgba(0, 0, 0, 0.44);
-    color: var(--electric-blue);
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
 }
 
 @media only screen and (min-width: 769px) {
-    .intro-text {
-        width: 500px;
-    }
+  .intro-text {
+    width: 500px;
+  }
 
-    .experience-text {
-        width: 750px;
-    }
+  .experience-text {
+    width: 750px;
+  }
 
-    .experience-title {
-       line-height: 0.5;
-    }
+  .experience-title {
+    line-height: 0.5;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+  }
+}
+
+
+:root {
+  --electric-blue: #97F9F9;
+  --uranian-blue: #a4def9;
+  --columbia-blue: #c1e0f7;
+  --thistle: #cfbae1;
+  --lilac: #c59fc9;
+  --pale-pink: #fad4d8;
+  --black: #242528;
+  --light-black: rgba(0, 0, 0, 0.44);
+  color: var(--electric-blue);
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 ul {
-    font-family: Helvetica;
-    font-size: medium;
-    color: var(--thistle)
+  font-family: Helvetica;
+  font-size: medium;
+  color: var(--thistle)
 }
 
 html {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 h1 {
-    font-weight: bold;
-    font-size: x-large;
-    color: var(--black);
+  font-weight: bold;
+  font-size: x-large;
+  color: var(--black);
 }
 
 h3 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
-    text-align: left;
+  text-align: left;
 }
 
-a, a:visited {
-    text-decoration: none;
-    color: var(--black);
-    font-size: larger;
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--black);
+  font-size: larger;
 }
 
 a:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .navigation-bar {
-    height: 60px;
-    background-color: var(--lilac);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 60px;
+  background-color: var(--lilac);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #introduction {
-    background-color: var(--thistle);
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  background-color: var(--thistle);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .introduction-body {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .body-with-header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile {
-    max-width: 25%;
-    max-height: 25%;
-    display: flex;
-    align-self: center;
+  max-width: 25%;
+  max-height: 25%;
+  display: flex;
+  align-self: center;
 }
 
 .intro-text {
-    display: flex;
-    flex-direction: column;
-    color: var(--black);
-    /* border-style: solid;
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  /* border-style: solid;
     border-width: 1px; */
 }
 
 .resume {
-    display: flex;
-    padding: 10px;
-    align-self: center;
-    background-color: var(--lilac);
-    color: var(--black);
+  display: flex;
+  padding: 10px;
+  align-self: center;
+  background-color: var(--lilac);
+  color: var(--black);
 }
 
 #skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .skill-item {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .box {
-    border-radius: 30px;
-    padding: 0.5em;
-    margin: 0.4em;
-    background-color: rgba(0, 0, 0, 0.44);
+  border-radius: 30px;
+  padding: 0.5em;
+  margin: 0.4em;
+  background-color: rgba(0, 0, 0, 0.44);
 }
 
 #experience {
-    background-color: var(--columbia-blue);
-    padding-top: 10px;
-    padding-bottom: 10px;
+  background-color: var(--columbia-blue);
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .experience-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-item {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    color: var(--black);
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  color: var(--black);
 }
 
 .experience-text {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: medium;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: medium;
 }
 
 .experience-title {
-    color: var(--black);
-    font-weight: bold;
-    align-self: center;
-    text-align: center;
+  color: var(--black);
+  font-weight: bold;
+  align-self: center;
+  text-align: center;
 }
 
 .experience-item {
-    color: var(--black);
+  color: var(--black);
+}
+
+.experience-logo {
+  display: flex;
+  align-self: center;
+  max-width: 80px;
+  max-height: 80px;
+  margin-top: 20px;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    max-width: 10%;
-    max-height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact {
-    padding-bottom: 50px;
-    padding-top: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 .icon {
-    margin-left: 20px;
-    max-width: 80px;
-    max-height: 80px;
+  margin-left: 20px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
